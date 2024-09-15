@@ -1,0 +1,65 @@
+.about-container {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.subheading-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.subheading-box {
+  position: absolute;
+  top: 50%; /* Vertically centers the box */
+  left: none; /* You can adjust this for where you want the box to start */
+  width: 100%; /* The width of the box can be adjusted here */
+  height: 60%; /* Adjust height as needed */
+  background-color: #b3d9ff; /* Semi-transparent background */
+  transform: translateY(-50%); /* Adjust to center exactly */
+  z-index: 1; /* Ensure it is behind the image */
+}
+.subheading-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 500px;
+  margin-right: 40px; /* Adds space to the right of the image */
+  z-index: 3; /* Ensure it appears above the box */
+}
+.subheading-text {
+  font-size: 2.5vw;
+  text-align: left;
+  margin-left: 25%;
+  z-index: 2;
+}
+
+.body-container {
+  text-align: center;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.body-text {
+  margin-left: 15%;
+  margin-right: 15%;
+
+  text-align: left;
+  font-size: 2vw;
+}
+
+.body-text p {
+  margin-bottom: 100px;
+}
+
+.body-text strong {
+  font-size: 30px;
+}

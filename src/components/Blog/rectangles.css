@@ -1,0 +1,40 @@
+.rectangle-container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden; /* Ensures content doesn't overflow outside the container */
+  cursor: pointer;
+  transition: height 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for height change */
+}
+
+.rectangle-content {
+  margin-bottom: 0;
+  padding: 0px 20px;
+  letter-spacing: normal;
+
+  background-color: #ffffff;
+  transition: height 0.3s ease; /* Smooth transition for content height change */
+}
+
+.rectangle-content h2 {
+  font-size: 24px;
+}
+
+.rectangle-content h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.rectangle-content p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.strong {
+  font-weight: 1800; /* Extra boldness if desired */
+  font-size: 30px; /* Extra boldness if desired */
+}

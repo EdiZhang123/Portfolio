@@ -1,0 +1,23 @@
+/*  blog.css  */
+
+.blog-container {
+  width: 100%;
+  gap: 20px; /* Adds space between rectangles */
+  padding: 20px; /* Optional: Adds padding around the container */
+}
+.sub-container {
+  display: flex;
+  max-height: none;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if they overflow */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between rectangles */
+  padding: 20px; /* Optional: Adds padding around the container */
+}
+
+.heading {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  font-size: 50px;
+}

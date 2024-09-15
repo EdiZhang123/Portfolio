@@ -1,0 +1,85 @@
+/* Navbar.css */
+.nav {
+  background: #63d471;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem calc((100vw - 1000px) / 2);
+  z-index: 12;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  padding: 0rem 2rem;
+  cursor: pointer;
+  border: none; /* Ensure no border is applied */
+  outline: none;
+  transition: 0.3s ease, color 0.3s ease;
+  &.active {
+    color: #bfbfbf;
+  }
+
+  /* Optional: Add hover effects for links */
+  &:hover {
+    color: #c4c4c4; /* Text color on hover */
+  }
+}
+
+.bars {
+  display: none;
+  color: #808080;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.nav-btn-link {
+  border-radius: 4px;
+  background: #808080;
+  padding: 10px 22px;
+  color: #000000;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.nav-btn-link:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  color: #808080;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+  }
+
+  .nav-menu,
+  .nav-btn {
+    display: none;
+  }
+}
