@@ -27,8 +27,9 @@ const About = () => {
           </p>
           <p>
             At school, I am part of UCLA Club Swimming, where I competed at
-            Nationals earlier this year. I am also involved in multiple clubs on
-            campus, from consulting to data analytics clubs.
+            Nationals earlier this year. I am also part of the Bruin Group
+            Consulting and Bruin Sports Analytics. I love cutting hair, singing,
+            and taking joyrides on my scooter!
           </p>
           <p font-size="50px">
             Feel free to contact me at edizhang05@gmail.com
