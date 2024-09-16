@@ -69,17 +69,25 @@
 }
 
 /* Media queries */
+/* NavbarElements.js */
 @media screen and (max-width: 768px) {
-  .bars {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
+  .nav-menu {
+    display: none; /* Hide menu by default on mobile */
   }
 
-  .nav-menu,
-  .nav-btn {
-    display: none;
+  .nav-menu.active {
+    display: flex; /* Show menu when active */
+    flex-direction: column; /* Align menu items vertically */
+  }
+
+  .bars {
+    display: block; /* Show the bars (hamburger) on mobile */
+  }
+}
+
+/* For larger screens (desktop view) */
+@media screen and (min-width: 769px) {
+  .bars {
+    display: none; /* Hide the bars (hamburger) on larger screens */
   }
 }

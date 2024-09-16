@@ -6,14 +6,24 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: #1c6ea4;
-  background: -moz-linear-gradient(left, #1c6ea4 0%, #1c6ea4 75%, #2cabff 100%);
+  background: -moz-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #1c6ea4 100px,
+    #2cabff 100%
+  );
   background: -webkit-linear-gradient(
     left,
     #1c6ea4 0%,
-    #1c6ea4 75%,
+    #1c6ea4 100px,
     #2cabff 100%
   );
-  background: linear-gradient(to right, #1c6ea4 0%, #1c6ea4 75%, #2cabff 100%);
+  background: linear-gradient(
+    to right,
+    #1c6ea4 0%,
+    #1c6ea4 100px,
+    #2cabff 100%
+  );
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -73,6 +83,45 @@ export const NavMenu = styled.div`
   white-space: nowrap; */
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const DropdownMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background: #1c6ea4;
+  background: -moz-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #1c6ea4 calc(100%-100px),
+    #2cabff 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #1c6ea4 0%,
+    #1c6ea4 calc(100%-100px),
+    #2cabff 100%
+  );
+  background: linear-gradient(
+    to right,
+    #1c6ea4 0%,
+    #1c6ea4 calc(100%-100px),
+    #2cabff 100%
+  );
+  width: 60%;
+  z-index: 9999;
+  a {
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #2cabff;
+    }
   }
 `;
 

@@ -16,13 +16,14 @@ const About = () => {
       </div>
       <div className="body-container">
         <div className="body-text">
+          <strong>Hi, I'm Edi</strong>
           <p>
-            <strong>Hi, I'm Edi,</strong> an undergraduate student at UCLA
-            studying applied mathematics and data science engineering. I am a
-            researcher at the Cleveland Clinic Lerner Research Institute, where
-            I am working on Bone Shape Statistical Modeling in the Advanced Lab
-            of Musculoskeletal Imaging. My interests include research, AI/ML,
-            and tech consulting.
+            {" "}
+            I'm an undergraduate student at UCLA studying applied mathematics
+            and data science engineering. I am a researcher at the Cleveland
+            Clinic Lerner Research Institute, where I am working on Bone Shape
+            Statistical Modeling in the Advanced Lab of Musculoskeletal Imaging.
+            My interests include research, AI/ML, and tech consulting.
           </p>
           <p>
             At school, I am part of UCLA Club Swimming, where I competed at
